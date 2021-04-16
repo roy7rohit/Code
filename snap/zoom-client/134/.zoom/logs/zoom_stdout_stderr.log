@@ -1,0 +1,16 @@
+ZoomLauncher started.
+Zoom path is: /snap/zoom-client/134/zoom
+cmd line: zoommtg://zoom.us/join?action=join&confno=91338079579&pwd=Wlhra292MmI3M0NzK254bCtoODVWdz09&zc=0&mcv=0.92.11227.0929&confid=dXNzPWtqR3RhRVNfUDI0SVYwSmVfVzd6VWFjX3NWRUVqTW9ieGF1QWRuYW5idng5ejR5Q29JbzlsT3A0d0hMcTdlMWYyQ0s4ZXpNTnhHZ1pmVmhzODlKUktBLjYxMlE0U2ZlYVMzRjJ1cEYmdGlkPTI3ZWU5ZWEzZDNlNzQxYTU5ZTBmMDkwZWRmNzBkMzU0&browser=chrome&t=1613879678829
+CreateReportChannel bp_server_fd=4
+$HOME = /home/roy/snap/zoom-client/134 
+export SSB_HOME=/home/roy/snap/zoom-client/134/.zoom; export QSG_INFO=1; export QXXXXXXXXCREEN_SCALE_FACTOR=1; export LXXXXXXXXY_PATH=/snap/zoom-client/134/zoom; export BREAKPAD_CLIENT_FD=3; /snap/zoom-client/134/zoom/zoom "zoommtg://zoom.us/join?action=join&confno=91338079579&pwd=Wlhra292MmI3M0NzK254bCtoODVWdz09&zc=0&mcv=0.92.11227.0929&confid=dXNzPWtqR3RhRVNfUDI0SVYwSmVfVzd6VWFjX3NWRUVqTW9ieGF1QWRuYW5idng5ejR5Q29JbzlsT3A0d0hMcTdlMWYyQ0s4ZXpNTnhHZ1pmVmhzODlKUktBLjYxMlE0U2ZlYVMzRjJ1cEYmdGlkPTI3ZWU5ZWEzZDNlNzQxYTU5ZTBmMDkwZWRmNzBkMzU0&browser=chrome&t=1613879678829" 
+No PulseAudio daemon running, or not running as session daemon.
+zoom started.
+Zoom is running, send message to it: zoommtg://zoom.us/join?action=join&confno=91338079579&pwd=Wlhra292MmI3M0NzK254bCtoODVWdz09&zc=0&mcv=0.92.11227.0929&confid=dXNzPWtqR3RhRVNfUDI0SVYwSmVfVzd6VWFjX3NWRUVqTW9ieGF1QWRuYW5idng5ejR5Q29JbzlsT3A0d0hMcTdlMWYyQ0s4ZXpNTnhHZ1pmVmhzODlKUktBLjYxMlE0U2ZlYVMzRjJ1cEYmdGlkPTI3ZWU5ZWEzZDNlNzQxYTU5ZTBmMDkwZWRmNzBkMzU0&browser=chrome&t=1613879678829
+Exit zoom as another zoom instance is running!
+No PulseAudio daemon running, or not running as session daemon.
+Client: Breakpad is using Client-Server Mode! client fd = 3
+success to create child process,status is 0.
+zoom exited normally.
+run zoom successfully,exit code is 0.
+ZoomLauncher exit.

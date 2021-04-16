@@ -1,0 +1,5 @@
+[Default Applications]
+x-scheme-handler/tg=userapp-Telegram Desktop-8XSCX0.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-FCZ5V0.desktop;userapp-Telegram Desktop-8XSCX0.desktop;

@@ -1,0 +1,136 @@
+import java.util.ArrayList;
+import java.util.Stack;
+
+public class collegeTest {
+
+  // Ques : 1
+  public static void addTwoWords(String a, String b) {
+    System.out.print(a + b);
+  }
+
+  // Ques : 2
+  public static boolean pattern(String a, String b) {
+    int n = a.length();
+    int m = b.length();
+    for (int i = 0; i < n; i++) {
+      for (int j = i + 1; j <= n; j++) {
+        String current = a.substring(i, j);
+        boolean found = true;
+        if (current.length() == b.length()) {
+          for (int k = 0; k < current.length(); k++) {
+            if (current.charAt(k) != b.charAt(k)) {
+              found = false;
+            }
+          }
+        } else {
+          found = false;
+        }
+        if (found) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  // Ques : 3
+  public static void reverseStr(String str) {
+    str = " " + str;
+    int start = 0;
+    int end = str.length() - 1;
+    String rev = "";
+    for (int i = str.length() - 1; i >= 0; i--) {
+      if (str.charAt(i) == ' ') {
+        start = i + 1;
+        for (int j = start; j <= end; j++) {
+          rev += str.charAt(j);
+        }
+        rev += " ";
+        end = i - 1;
+      }
+    }
+    System.out.println(rev);
+  }
+
+  // Ques : 4
+  public static void removeSpaces(String str) {
+    String nstr = "";
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) == ' ') {
+        continue;
+      }
+      nstr += str.charAt(i);
+    }
+    System.out.println(nstr);
+  }
+
+  // Ques : 5
+  public static void countWithoutSpaces(String str) {
+    int count = 0;
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) == ' ') {
+        continue;
+      }
+      count++;
+    }
+    System.out.println(count);
+  }
+
+  // Ques : 6
+  public static void removeVowels(String str) {
+    String nstr = "";
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o'
+          || str.charAt(i) == 'u') {
+        continue;
+      }
+      nstr += str.charAt(i);
+    }
+
+    System.out.println(nstr);
+  }
+
+  // Ques : 7
+  public static void UNDO(Stack<String> undo, Stack<String> redo) {
+    String str = undo.pop();
+    redo.push(str);
+  }
+
+  // Ques : 8
+  public static void REDO(Stack<String> redo, Stack<String> undo) {
+    String str = redo.pop();
+    undo.push(str);
+  }
+
+  // Ques : 9
+  public static int numOfCmds(ArrayList<Integer> cmds){
+    return cmds.size();
+  }
+
+  // Ques : 10
+  public static String lastUseCmd(Stack<String> undo) {
+    return undo.pop();
+  }
+
+  // Ques : 11
+  public static String lastNthUseCmd(Stack<String> undo, int n) {
+    int i = 0;
+    String str = "";
+    while (undo.size() != 0 && i < n) {
+      str = undo.pop();
+      i++;
+    }
+    return str;
+  }
+
+  public static void main(String[] args) {
+    addTwoWords("Hello", "World");
+    System.out.println();
+    System.out.println(pattern("california", "lifo"));
+    System.out.println();
+    reverseStr("Hello World");
+    removeSpaces("Hello World");
+    countWithoutSpaces("Hello World");
+    removeVowels("Hello World");
+  }
+}
